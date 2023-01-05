@@ -114,3 +114,11 @@ function endGame () {
 
 choices.onclick = userAnswer;
 
+// create an event listener to then go to another function that deals with the scores and initials 
+// in the function identify the value of the input box 
+// next line of the function define a variable that will = local storage get item or an empty array 
+// create an object that is going to keep the value of the score and the initials 
+// take the object variable and push it onto the array for local storage 
+// create a local storage set item 
+// do a window.location.href 
+// in other page do a get local storage and display it 
