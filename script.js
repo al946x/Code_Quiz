@@ -1,27 +1,56 @@
 // create questions 
 var questions = [
-    // {
-    //     question: '', 
-    //     answer: '',
-    //     choices: [],
-    // },
-    // {
-    //     question: '', 
-    //     answer: '',
-    //     choices: [],
-    // },
-    // {
-    //     question: '', 
-    //     answer: '',
-    //     choices: [],
-    // },
-    {
-        question: 'abc', 
-        answer: 'abc',
-        choices: ['abc', 'a', 'b', 'c'],
-    }
-]
+{
+    question: "What is the correct HTML element tag for Javascript?",
+    choices: ["script", "script.html", "script.element", "script.src"],
+    answer: "script"
+},
 
+
+{
+    question: "Which of these is not a boolean?",
+    choices: [
+        "true",
+        "false",
+        "all of the above",
+        "none of the above"
+    ],
+    answer: "none of the above"
+},
+
+{
+    question: "What is the correct way to declare a function in Javascript?",
+    choices: [
+        "function = myfunction()",
+        "var function = myfunction()",
+        "function myfunction()",
+        "none of the above"
+    ],
+    answer: "function myfunction()"
+},
+
+{
+    question: "Which one of the following is the correct tag for the header in HTML",
+    choices: [
+        "<heading>",
+        "<header>",
+        "<head>",
+        "<headers>"
+    ],
+    answer: "<header>"
+},
+
+{
+    question: "What is JavaScript?",
+    choices: [
+        "A language to add interactive features to the webpage",
+        "A programe",
+        "A language to style the webpage",
+        "A set of codes"
+    ],
+    answer: "A language to add interactive features to the webpage"
+},
+];
 
 // identify html for global variables
 var startButton = document.getElementById (
@@ -53,7 +82,7 @@ startButton.addEventListener ('click', startQuiz);
 // clear the page of the intro, unhide the questions and start the timer
 function startQuiz () {
     startScreen.classList.add("hide")
-    questionsEL.removeAttribute("class")
+    // questionsEL.removeAttribute("class")
     timer = setInterval(clock, 1000)
     timeEL.textContent=time;
 
@@ -120,5 +149,6 @@ choices.onclick = userAnswer;
 // create an object that is going to keep the value of the score and the initials 
 // take the object variable and push it onto the array for local storage 
 // create a local storage set item 
+localStorage.setItem ('color', 'purple')
 // do a window.location.href 
 // in other page do a get local storage and display it 
